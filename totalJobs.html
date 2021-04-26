@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+
+<!-- Head -->
+<head>
+  <title>DATS6401 - Final Project</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <!-- Google Visualization API -->
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Archivo+Narrow:400,700" rel="stylesheet" type="text/css">
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+  <!-- Custom Styling -->
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+</head>
+
+<!-- Body -->
+<body>
+
+  <!-- Main Page -->
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+
+          <!-- Logo -->
+          <h1><a href="index.html">The Data Science<span class="logo_colour"> Job Search</span></a></h1>
+          <h2>The Job Search Simplified for Data Scientists</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+
+          <!-- Menu Bar -->
+          <li><a href="index.html">Home</a></li>
+          <li class="selected"><a href="totalJobs.html">Jobs</a></li>
+          <li><a href="salary.html">Salary</a></li>
+          <li><a href="companies.html">Companies</a></li>
+          <li><a href="location.html">Location</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!--  Site Content -->
+    <div id="site_content">
+      
+      <div id="display">
+        
+        <!-- Page Header -->
+        <h1><strong>Different Types of Data Science Jobs</strong></h1>
+        <p>This section refers to the various types of data science jobs currently on Glassdoor. Throughout this page, you will find the most popular data science job titles, what sectors each job is in, along with the most popular industries of which the jobs are in.</p>
+        <hr style="border-style: solid;">
+
+        <!-- Most Popular Data Science Titles -->
+        <h1>The Most Popular Data Science Job Titles</h1>
+        <p>This graph displays the job titles that are most frequent in the dataset. Looking below, we can see that the titles of "Data Scientist", "Data Engineer" and "Data Analyst" are the most popular job titles within the Data Science field. </p>
+        <div id="ds-jobs-popular"></div>
+        <hr>
+
+        <!-- Jobs in Each Sector-->
+        <h1>The Different Sectors For Data Science Jobs</h1>
+        <p>This pie chart displays the 23 different sectors in which the jobs are within. We can see that Information Technology, Business Services, and Biotech & Pharmaceuticals are the most popular Data Science sectors. This makes sense as these sectors are constantly handling massive amounts of data. </p>
+        <div id="ds-sector"></div>
+        <hr>
+
+        <!-- Different Industries -->
+        <h1>The Top 20 Data Science Industries</h1>
+        <p> This bar chart displays the top 20 industries in the Data Science field. Since there are over 140 different industries, we can simply look at the most popular ones. IT Services, Staffing & Outsourcing and Biotech Pharmaceuticals are the 3 most popular industries.</p>
+        <div id="ds-industry"></div>
+
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+      &copy; 2021 | Design By <a href="http://www.html5webtemplates.co.uk">WebTemplates</a> | Tristin Johnson
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/totalJobs.js"></script>
+</body>
+</html>

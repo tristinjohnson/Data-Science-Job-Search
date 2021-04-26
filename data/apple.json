@@ -1,0 +1,62 @@
+[
+ {
+   "Job_Title": "Sr. Data Scientist/Analyst",
+   "Low": 200,
+   "high": 250,
+   "Company_Name": "Apple"
+ },
+ {
+   "Job_Title": "Machine Learning Engineer",
+   "Low": 200,
+   "high": 250,
+   "Company_Name": "Apple"
+ },
+ {
+   "Job_Title": "Data Engineer/Scientist",
+   "Low": 150,
+   "high": 237,
+   "Company_Name": "Apple"
+ },
+ {
+   "Job_Title": "ML Engineer - Siri Search",
+   "Low": 150,
+   "high": 237,
+   "Company_Name": "Apple"
+ },
+ {
+   "Job_Title": "Deep Learning Engineer",
+   "Low": 135,
+   "high": 214,
+   "Company_Name": "Apple"
+ },
+ {
+   "Job_Title": "Content Data Scientist",
+   "Low": 93,
+   "high": 151,
+   "Company_Name": "Apple"
+ },
+ {
+   "Job_Title": "SoC Power Modeling Engineer",
+   "Low": 74,
+   "high": 144,
+   "Company_Name": "Apple"
+ },
+ {
+   "Job_Title": "Search Data Scientist",
+   "Low": 76,
+   "high": 122,
+   "Company_Name": "Apple"
+ },
+ {
+   "Job_Title": "Digital Analytics Manager",
+   "Low": 73,
+   "high": 111,
+   "Company_Name": "Apple"
+ },
+ {
+   "Job_Title": "Performance Data Engineer",
+   "Low": 46,
+   "high": 82,
+   "Company_Name": "Apple"
+ }
+]

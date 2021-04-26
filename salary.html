@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+
+<!-- Head -->
+<head>
+  <title>DATS6401 - Final Project</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <!-- Google Visualization API -->
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Archivo+Narrow:400,700" rel="stylesheet" type="text/css">
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+  <!-- Custom Styling -->
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+</head>
+
+<!-- Body -->
+<body>
+
+  <!-- Main Page -->
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- Logo -->
+          <h1><a href="index.html">The Data Science<span class="logo_colour"> Job Search</span></a></h1>
+          <h2>The Job Search Simplified for Data Scientists</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+
+          <!-- Menu Bar -->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="totalJobs.html">Jobs</a></li>
+          <li class="selected"><a href="salary.html">Salary</a></li>
+          <li><a href="companies.html">Companies</a></li>
+          <li><a href="location.html">Location</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Site Content -->
+    <div id="site_content">
+      
+      <div id="display">
+
+        <!-- Page Header -->
+        <h1><strong>The Salary of a Data Scientist</strong></h1>
+        <p>This section refers to the different aspects of salary when it comes to finding a job. Below, you will find various graphs displaying the differenet salary ranges. Since there are a large amount of different data science titles, we can categorize the job titles into the main subject. This will give you a better idea of the low and high end salaries of several positions. </p>
+        <p>*** The salaries below are estimates from Glassdoor.com, based off past employees, and can vary from job to job ***</p>        <hr style="border-style: solid;">
+
+        <!-- Jobs by Salary Range -->
+        <h1>Data Science Job Count by Salary Range</h1>
+        <p>The graph below shows the total amount of jobs within a certain salary range. Looking below, around 53% of the jobs in this datset have a salary of over $100,000, and around 75% of the jobs have a salary of over $75,000.</p>
+        <div id="ds-salary-range"></div>
+        <hr>
+
+        <!-- Low - High Salaries by Category -->
+        <h1>Low & High Salaries of Data Science Job Categories</h1>
+        <p>Since there are a wide range of Data Science job titles, we can go ahead and categorize these titles into 5 main groups that can be seen below. Furthermore, the low end and high end salaries are given for each category. We can see below that a Data Engineer makes the most money on the high-salary end, whereas Data Scientist have the highest starting salary. </p>
+        <div id="ds-low-high-salary"></div>
+        <hr>
+
+        <!-- Dropdown of Specific Jobs by Category -->
+        <h1>Low & High Salaries of Data Science Jobs by Category</h1>
+        <p>The graph below displays 20 randomely selected job titles within each job category. The blue represents the low-end salary, and the red represent the high-end salary of those positions. Feel free to select any of the 5 job categories to view the salary information within that category. </p>
+
+        <form id="salary-form" onchange="lowHighSalaryByCategory()" class="dropdown-box">
+            <select id="dropdown">
+              <option value="Data Scientist">Data Scientist</option>
+              <option value="Data Engineer">Data Engineer</option>
+              <option value="Data Analyst">Data Analyst</option>
+              <option value="Machine Learning">Machine Learning</option>
+              <option value="Computer/Software Engineering">Computer/Software Engineering</option>
+            </select>
+        </form>
+        <div id="salary-by-category"></div>
+
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+      &copy; 2021 | Design By <a href="http://www.html5webtemplates.co.uk">WebTemplates</a> | Tristin Johnson
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/d3.min.js"></script>
+  <script src="js/salary.js"></script>
+</body>
+</html>

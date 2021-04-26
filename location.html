@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+
+<!-- Head -->
+<head>
+  <title>DATS6401 - Final Project</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <!-- Google Visualization API -->
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Archivo+Narrow:400,700" rel="stylesheet" type="text/css">
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+  <!-- Custom Styling -->
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+</head>
+
+<!-- Body -->
+<body>
+
+  <!-- Main Page -->
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+
+          <!-- Logo -->
+          <h1><a href="index.html">The Data Science<span class="logo_colour"> Job Search</span></a></h1>
+          <h2>The Job Search Simplified for Data Scientists</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- Menu Bar -->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="totalJobs.html">Jobs</a></li>
+          <li><a href="salary.html">Salary</a></li>
+          <li><a href="companies.html">Companies</a></li>
+          <li class="selected"><a href="location.html">Location</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Site Content -->
+    <div id="site_content">
+      
+      <div id="display">
+
+        <!-- Page Header -->
+        <h1><strong>Data Science Jobs by Location</strong></h1>
+        <p>This section refers to the jobs based off of location. Throughout this page, the states in which this analysis was done will be highighted, along with the low and high end salaries by state, and finally, the low and high end salaries of cities within each state.</p>
+        <p>*** The salaries below are estimates from Glassdoor.com, based off past employees, and can vary from job to job ***</p>        <hr style="border-style: solid;">
+
+        <!-- GeoMap of Jobs -->
+        <h1>Job Count in the U.S. by State</h1>
+        <p>The graph below highlights the amount of jobs within each state. This dataset consisted of 10 different U.S. states, as you can see below. California and Texas have the greatest number of jop postings from this dataset, and we will look deeper into all of the states.</p>
+        <div id="ds-map-count" style="width: 1000px; height: 500px; padding-left: 125px;"></div>
+        <br><br><br><br><br><hr>
+
+        <!-- Low and High salaries by state-->
+        <h1>Low and High Salary by State</h1>
+        <p>This graph highights the low and high end salaries by state. As seen below, Deleware has the highest salaries within all of their job postings, however, there are only 10 job postings in Deleware, making this information quite unreliable. Looking at California and Texas, we can see there are over 1,000 job postings in both of those states, meaning the salary estimations are more accurate and reliable.</p>
+        <div id="low-high-salary-state" style="padding-left: 100px;"></div>
+        <hr>
+
+        <!-- Low and High Salaries by City (Dropdown Menu) -->
+        <h1>Low and High Salaries by City</h1>
+        <p>This graph displays the top 15 high and low salaries of the cities within each state. Feel free to select any of the states from the dropdown menu to view the top 15 cities by highest paying salary. The states of New York, Ohio, Florida, Deleware, and Arizona were combined into one as none of those states had 15 cities in the dataset.</p>
+
+        <form id="salary-by-city" onchange="citySelection()" class="dropdown-box">
+          <select id="city-dropdown">
+            <option value="California">California</option>
+            <option value="Texas">Texas</option>
+            <option value="Pennsylvania">Pennsylvania</option>
+            <option value="Illinois">Illinois</option>
+            <option value="New Jersey">New Jersey</option>
+            <option value="Arizona, Deleware, Florida">Arizona, Deleware & Florida</option>
+            <option value="New York, Ohio">New York & Ohio</option>
+          </select>
+        </form>
+        <div id="low-high-salary-city-dropdown"></div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+      &copy; 2021 | Design By <a href="http://www.html5webtemplates.co.uk">WebTemplates</a> | Tristin Johnson
+    </div>
+  </div>
+
+  <!-- JavaScript Files -->
+  <script src="js/d3.min.js"></script>
+  <script src="js/location.js"></script>
+</body>
+</html>

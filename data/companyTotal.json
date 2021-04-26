@@ -1,0 +1,63 @@
+[
+    {
+        "company": "IBM",
+        "job_count": "61"
+    },
+    {
+        "company": "Apple",
+        "job_count": "60"
+    },
+    {
+        "company": "Amazon",
+        "job_count": "47"
+    },
+    {
+        "company": "Staffigo Technical Services",
+        "job_count": "28"
+    },
+    {
+        "company": "JPMorgan Chase",
+        "job_count": "27"
+    },
+    {
+        "company": "Facebook",
+        "job_count": "25"
+    },
+    {
+        "company": "Diverse Lynx",
+        "job_count": "25"
+    },
+    {
+        "company": "Solekai Systems",
+        "job_count": "24"
+    },
+    {
+        "company": "Southwest Research Institue",
+        "job_count": "23"
+    },
+    {
+        "company": "KForce",
+        "job_count": "21"
+    },
+    {
+        "company": "Nationwide Children's Hospital",
+        "job_count": "20"
+    },
+    {
+        "company": "Humana",
+        "job_count": "19"
+    },
+    {
+        "company": "GSK",
+        "job_count": "18"
+    },
+    {
+        "company": "Varsity Tutors",
+        "job_count": "18"
+    },
+    {
+        "company": "CyberCoders",
+        "job_count": "18"
+    }
+
+]

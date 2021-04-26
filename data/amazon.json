@@ -1,0 +1,62 @@
+[
+ {
+   "Job_Title": "Diagnostic Research Scientist",
+   "Low": 200,
+   "high": 250,
+   "Company Name": "Amazon"
+ },
+ {
+   "Job_Title": "Sr. AWS Data Scientist",
+   "Low": 138,
+   "high": 217,
+   "Company Name": "Amazon"
+ },
+ {
+   "Job_Title": "Applied Scientist",
+   "Low": 129,
+   "high": 210,
+   "Company Name": "Amazon"
+ },
+ {
+   "Job_Title": "Senior Data Scientist",
+   "Low": 132,
+   "high": 208,
+   "Company Name": "Amazon"
+ },
+ {
+   "Job_Title": "Sr Medical Data Scientist",
+   "Low": 102,
+   "high": 179,
+   "Company Name": "Amazon"
+ },
+ {
+   "Job_Title": "Sr. Data & ML Engineer",
+   "Low": 48,
+   "high": 98,
+   "Company Name": "Amazon"
+ },
+ {
+   "Job_Title": "Data Engineer, Amazon Games",
+   "Low": 46,
+   "high": 82,
+   "Company Name": "Amazon"
+ },
+ {
+   "Job_Title": "Senior Data Scientist ",
+   "Low": 49,
+   "high": 78,
+   "Company Name": "Amazon"
+ },
+ {
+   "Job_Title": "Sr. Data Engineer",
+   "Low": 45,
+   "high": 78,
+   "Company Name": "Amazon"
+ },
+ {
+   "Job_Title": "Data Engineer - Brand Program",
+   "Low": 47,
+   "high": 73,
+   "Company Name": "Amazon"
+ }
+]

@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html>
+
+<!-- Head -->
+<head>
+  <title>DATS6401 - Final Project</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <!-- Google Visualization API -->
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Archivo+Narrow:400,700" rel="stylesheet" type="text/css">
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+  <!-- Custom Styling -->
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+  <!-- D3 ToolTip -->
+  <link rel="stylesheet" href="style/d3-tip.css">
+</head>
+
+<body>
+
+  <!-- Main Page -->
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+
+          <!-- Logo -->
+          <h1><a href="index.html">The Data Science<span class="logo_colour"> Job Search</span></a></h1>
+          <h2>The Job Search Simplified for Data Scientists</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+
+          <!-- Menu Bar-->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="totalJobs.html">Jobs</a></li>
+          <li><a href="salary.html">Salary</a></li>
+          <li class="selected"><a href="companies.html">Companies</a></li>
+          <li><a href="location.html">Location</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Site Content-->
+    <div id="site_content">
+      
+      <!-- Page Header -->
+      <div id="display">
+        <h1><strong>The Top Companies Hiring for Data Scientists</strong></h1>
+        <p>This section refers to the companies who are hiring the most Data Scientists. Throuhgout this page, you will discover the top 15 companies seeking the most data scientists, along with a break-down of the specific titles of the top 3 companies with low and high-end salaries. </p>
+        <p>*** The salaries below are estimates from Glassdoor.com, based off past employees, and can vary from job to job ***</p>
+        <hr style="border-style: solid;">    
+
+        <!-- Companies with Greatest Number of Job Postings -->
+        <h1>Companies with the Most Job Postings for Data Scientists</h1>
+        <p>Below, you will find a graph displaying the companies who are hiring the most. As you can see below, IBM, Apple and Amazon have the greaters number of job postings currently online. With these 3 companies being tech giants, it makes sense that they are hiring the most. </p>
+        <br><br><br><br><br>
+        <div class="container">
+          <div class="row">
+            <div id="chart-area"></div>
+          </div>
+        </div>
+        <hr>
+
+        <!-- Table of Multiple Companies Salaries with Title-->
+        <h1>Highlighting IBM, Apple & Amazon's Job Postings</h1>
+        <p>Since IMB, Apple & Amazon are hiring the most, we can take a deeper look into some of the job titles each company is hiring. On the left, you will find a display that represents 5 Entry-Level Positions along with 5 Senior-Level Positions, all with the low and high end salary estimates. On the right, you will find some quick facts regarding the company as a whole.</p>
+        <br><br><br><br>
+
+        <div class="container1">
+          <div class="row">
+            <table id="salary-table">
+              <!-- Table Row of IBM -->
+              <tr>
+                <!-- Graph of IBM Entry Level vs. Senior Level Salaries -->
+                <td><div id="new-chart" style="margin-left: 5px; width: 720px; height: 520px;"></div><hr><br><br><br></td>
+
+                <!-- Right Side Information Pop-Up -->
+                <td style="border-left: 3px solid black;">
+                  <img src="style/ibm.png">
+                  <button id="myBtn">Quick Facts About IBM</button>
+                  <div id="myModal" class="modal">
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <p style="padding-left: 0px; padding-right: 0px;">1. Headquarters based in Armonk, NY</p>
+                      <p style="padding-left: 0px; padding-right: 0px;">2. Over 300,000+ Employees World-Wide</p>
+                      <p style="padding-left: 0px; padding-right: 0px;">3. $73.6 Billion in Revenue (2020)</p>
+                      <p style="padding-left: 0px; padding-right: 0px;">4. Average Entry-Mid Level Salary -> $116,000</p>
+                      <p style="padding-left: 0px; padding-right: 0px;">5. Average Senior Level Salary -> $153,000</p>
+                    </div>
+                  </div>
+                  <!-- JavaScript for Pop-Up -->
+                  <script src="js/modal/ibm-modal.js"></script>
+                </td>
+              </tr>
+
+              <!-- Table Row of Apple -->
+              <tr>
+                <!-- Graph of Apple Entry Level vs. Senior Level Salaries -->
+                <td><div id="new-chart1" style="margin-left: 5px; width: 720px; height: 520px;"></div><hr><br><br><br></td>
+
+                <!-- Right Side Information Pop-Up -->
+                <td style="border-left: 3px solid black;">
+                  <img src="style/apple.png" style="width: 265px; height: 265px; top: -140px;">
+                  <button id="myBtn1">Quick Facts About Apple</button>
+                  <div id="myModal1" class="modal1">
+                    <div class="modal-content1">
+                      <span class="close1">&times;</span>
+                      <p style="padding-left: 0px; padding-right: 0px;">1. Headquarters based in Cupertino, CA</p>
+                      <p style="padding-left: 0px; padding-right: 0px;">2. Over 147,000+ Employees World-Wide</p>
+                      <p style="padding-left: 0px; padding-right: 0px;">3. $294.13 Billion in Revenue (2020)</p>
+                      <p style="padding-left: 0px; padding-right: 0px;">4. Average Entry-Mid Level Salary -> $134,000</p>
+                      <p style="padding-left: 0px; padding-right: 0px;">5. Average Senior Level Salary -> $174,000</p>
+                    </div>
+                  </div>
+                  <!-- JavaScript for Pop-Up -->
+                  <script src="js/modal/apple-modal.js"></script>
+                </td>
+              </tr>
+
+              <!-- Table Row of Amazon -->
+              <tr>
+                <!-- Graph of Amazon Entry Level vs. Senior Level Salaries -->
+                <td><div id="new-chart2" style="margin-left: 5px; width: 720px; height: 520px;"></div></td>
+
+                <!-- Right Side Information Pop-Up -->
+                <td style="border-left: 3px solid black;">
+                  <img src="style/amazon.png" style="width: 325px; height: 175px; top: -100px;">
+                  <button id="myBtn2">Quick Facts About Amazon</button>
+                  <div id="myModal2" class="modal2">
+                    <div class="modal-content2">
+                      <span class="close2">&times;</span>
+                      <p style="padding-left: 0px; padding-right: 0px;">1. Headquarters based in Seattle, WA</p>
+                      <p style="padding-left: 0px; padding-right: 0px;">2. Over 575,7000+ Employees World-Wide</p>
+                      <p style="padding-left: 0px; padding-right: 0px;">3. $386.06 Billion in Revenue (2020)</p>
+                      <p style="padding-left: 0px; padding-right: 0px;">4. Average Entry-Mid Level Salary -> $112,000</p>
+                      <p style="padding-left: 0px; padding-right: 0px;">5. Average Senior Level Salary -> $144,000</p>
+                    </div>
+                  </div>
+                  <!-- JavaScript for Pop-Up -->
+                  <script src="js/modal/amazon-modal.js"></script>
+                </td>
+              </tr>
+            </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+      &copy; 2021 | Design By <a href="http://www.html5webtemplates.co.uk">WebTemplates</a> | Tristin Johnson
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/d3.min.js"></script>
+  <script src="js/d3-tip.js"></script>
+  <script src="js/companies.js"></script>
+</body>
+</html>
